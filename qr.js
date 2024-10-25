@@ -58,24 +58,25 @@ router.get('/', async (req, res) => {
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await Qr_Code_By_Malvin_King.sendMessage(Qr_Code_By_Malvin_King.user.id, { text: '' + b64data });
 	
-				   let MALVIN_KING_TEXT = `
-┏━━━━━━━━━━━━━━
-┃ᴍᴀʟᴠɪɴ-ᴍᴅ SESSION IS 
-┃SUCCESSFULLY
-┃CONNECTED ✅🔥
-┗━━━━━━━━━━━━━━━
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ ᴍᴀʟᴠɪɴ-ᴋɪɴɢ ⚡𖥘
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❸ || Owner = https://wa.me/263780166288
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❺ || Bot Repo = https://github.com/kingmalvn/RAVENS-MD
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❻ || YouTube = https://www.youtube.com/@MalvinKing_TECH 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©2024-2099 ᴍᴀʟᴠɪɴ-ᴋɪɴɢ_`
+				   let MALVIN_KING_TEXT = `> *_Pair Code Connected by  GHOST-MD_*
+*_Made With 🤍_*
+______________________________________
+╔════◇
+║ *『 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 』*
+║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
+╚══════════════════════╝
+╔═════◇
+║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
+║❒ *Youtube:* _https://youtube.com/@cyberghost630?si=JVTDEQ8vO9Ksgv9M_
+║❒ *Owner:* _https://wa.me/+94741140620?text=*❝𝙷𝙴𝚈◹𝙶𝙷𝙾𝚂𝚃✗𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁❞⛺_
+║❒ *Repo:* _https://github.com/GHOST-TEM/GHOST-MD.git_
+║❒ *WaGroup:* _https://chat.whatsapp.com/DhCdan60qzH0yoIxmybU3i_
+║❒ *WaChannel:* https://whatsapp.com/channel/0029VaobbRhG8l5Mmhh2IA3O
+║❒ *GHOST MD:* 
+╚══════════════════════╝ 
+_____________________________________
+
+_𝗚𝗛𝗢𝗦𝗧 𝗠𝗗_  `
 	 await Qr_Code_By_Malvin_King.sendMessage(Qr_Code_By_Malvin_King.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
 
 
