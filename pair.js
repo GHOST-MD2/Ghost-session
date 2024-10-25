@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Malvin_King,    useMultiFileAuthState,
+    default: GHOST_TEAM,    useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
     Browsers
@@ -19,20 +19,20 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function MALVIN_KING_PAIR_CODE() {
+        async function GHOST_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Malvin_King = Malvin_King({
+            let Pair_Code_By_Ghost_Team = Malvin_King({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
                 },
                 printQRInTerminal: false,
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
-                browser: ["Chrome (Linux)", "", ""]
+                browser: ["Safari (mac QS)", "", ""]
              });
              if(!Pair_Code_By_Malvin_King.authState.creds.registered) {
                 await delay(1500);
