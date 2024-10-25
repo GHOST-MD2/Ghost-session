@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
-                browser: ["Safari (mac QS)", "", ""]
+                browser: ["Safari (mac OS)", "", ""]
              });
              if(!Pair_Code_By_Malvin_King.authState.creds.registered) {
                 await delay(1500);
